@@ -18,5 +18,3 @@ class LegResult
     calc_ave
   end
 end
-
-    

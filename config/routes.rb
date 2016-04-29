@@ -1,4 +1,23 @@
 Rails.application.routes.draw do
+resources :racers
+resources :races
+
+=begin
+  
+
+  
+end
+
+namespace :api do
+    resources :races do
+      resources :results
+    end
+
+    resources :racers do
+      resources :entries
+    end
+  end
+=end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,3 +73,4 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+

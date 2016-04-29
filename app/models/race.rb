@@ -19,6 +19,8 @@ class Race
     "t2" => {:order=>3, :name=>"t2"},
     "run" => {:order=>4, :name=>"run", :distance=>10.0, :units=>"kilometers"},
   }
+
+  
   def swim
       event=events.select {|event| "swim"==event.name}.first
       event||=events.build(DEFAULT_EVENTS["swim"])
